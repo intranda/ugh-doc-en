@@ -1,2 +1,12 @@
-# Initial page
+---
+description: Regelsätze und Referenzdokumentation
+---
+
+# Dokumentation UGH Bibliothek
+
+Die Verwaltung von Dokumenten ist seit jeher die Hauptaufgabe von Bibliotheken. Mit dem Beginn der Digitalisierung von Informationen hat sich die Aufgabe stark gewandelt. Vermehrt werden Metadaten zum Auffinden, Sortieren und Beurteilen von Informationen genutzt. Das gebundene Buch als Informationseinheit wird zunehmend in eine Vielzahl kleinerer Einheiten \(Strukturen/Dokumentstrukturen\) aufgeteilt, um diese im Internet sinnvoll und gut nutzbar präsentieren zu können. Um diese Funktionalitäten umsetzen zu können, wurden in den vergangenen Jahren unterschiedliche Datenformate erarbeitet, die die erforderlichen Meta-Informationen zu einem Dokument abspeichern und auf den eigentlichen Inhalt verweisen \(z.B. TIFF-, XML- oder HTML- Dateien\). Ebenso ist es übliche Praxis, Metadaten zu einem Dokument aus unterschiedlichen Quellen zu aggregieren und gegebenenfalls zu ergänzen.
+
+Für die Softwareentwicklung ergeben sich daraus einige Besonderheiten. Da sich Datenformate schnell ändern bzw. erweitert werden sowie unterschiedliche Projekte unterschiedliche Anforderungen an Datenformate haben \(es müssen unterschiedliche Daten abgespeichert werden\), ist es ratsam, ein möglichst flexibles und wohldefiniertes Datenformat zu nutzen. Um unterschiedliche Formate be- und verarbeiten zu können ist es ferner ratsam, dass alle Tools und Programme auf eine einheitliche Programmierschnittstelle \(API\) aufsetzen.
+
+Die UGH Bibliothek stellt eine solche Programmierschnittstelle dar, die durch unterschiedliche Tools und Programme genutzt werden kann und soll, um Daten zu laden und zu speichern. Diese Schnittstelle implementiert ein universelles Dokumentmodell, welches von unterliegenden Formaten zur Beschreibung von Metainformationen unabhängig ist. Vielmehr existieren unterschiedliche Klassen zur Serialisierung eines Dokumentes. Jede dieser Klassen implementiert genau ein Datenformat. Überliegende Programmschichten \(bspw. die Business-Logik\) ist somit vollkommen unabhängig vom Datenformat. Zu beachten ist jedoch, dass nicht immer alle Datenformate auch das komplette universelle Dokumentmodell umsetzen können. Ebenso können einige Serialisierungsklassen lediglich Daten lesen, da ein Schreiben für dieses Datenformat nicht benötigt wird oder wenig sinnvoll erscheint. Dies gilt beispielsweise für Klassen, die Datenformate aus Bibliothekskatalogen übernehmen. Da dort üblicherweise nur die bibliographische Ebene abgebildet wird, könnten sämtliche Strukturinformationen sowie Referenzen nicht geschrieben werden. Auf eine Schreibmethode wurde daher für diese Klassen verzichtet.
 
