@@ -1,6 +1,6 @@
 # 4.2. METS/MODS
 
-Serialisierungsklassen:
+Serialization classes:
 
 ```text
 ugh.fileformats.mets.MetsMods (v1.9) 

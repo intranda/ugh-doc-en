@@ -1,10 +1,10 @@
 # 4.5. RDF/XML
 
-Serialisierungsklasse:
+Serialization class:
 
 ```text
  ugh.fileformats.exel.RDFFile (v1.2)
 ```
 
-Das Serialisierungsformat RDF/XML ist aus Kompatibilitätsgründen Teil der UGH Bibliothek \(beispielsweise zum Lesen alter RDF/XML-Bestände, die in ein neues Format überführt werden sollen\), denn einige neuere Teile der Dokumentmodells können damit nicht mehr serialisiert werden und gingen somit bei einer Speicherung verloren. Dies betrifft momentan zum Beispiel die erweiterten Paginierungsarten „Spaltenzählung“ und „Blattzählung“. Daher sollte das Format nicht mehr zum internen Speichern genutzt werden!
+For compatibility reasons, the serialization format RDF/XML is part of the UGH library \ (for example, to read old RDF/XML files that are to be converted to a new format\), because some newer parts of the document model cannot be serialized with it and would be lost when saved.This currently affects, for example, the extended pagination types "column count" and "sheet count".Therefore, the format should no longer be used for internal storage!
 

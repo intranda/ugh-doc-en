@@ -1,10 +1,8 @@
 # 4.1. MARC
 
-Serialisierungsklassen:
+Serialization classes:
 
 ```text
 de.intranda.ugh.extension.MarcFileformat
 ```
-
-### 
 

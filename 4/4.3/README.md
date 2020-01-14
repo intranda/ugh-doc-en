@@ -1,6 +1,6 @@
 # 4.3. PICA+
 
-Serialisierungsklasse:
+Serialization class:
 
 ```text
  ugh.fileformats.opac.PicaPlus (v1.3)
