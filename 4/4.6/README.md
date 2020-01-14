@@ -1,4 +1,4 @@
 # 4.6. AGORA-Database
 
-Die AGORA-Datenbank Serialisierung ist nicht mehr in der UGH Bibliothek enthalten, das folgende Kapitel ist jedoch aus Dokumentationsgründen erhalten geblieben!
+The AGORA database serialization is no longer included in the UGH library, but the following chapter has been retained for documentation reasons!
 
